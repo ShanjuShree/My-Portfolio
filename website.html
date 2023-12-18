@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ac2d22a3b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+          <nav>
+            <img src="images/s logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <!----- <i class="fa-solid fa-xmark" onclick="closemenu()"></i>---->
+            </ul>
+            <!----<i class="fa-solid fa-bars" onclick="openmenu()"></i>----->
+          </nav>
+          <div class="header-text">
+            <p>Welcome to my Blog!</p>
+            <h1>Hi, I'm <span>Shanju Shree</span><br>From India</h1>
+          </div>
+       </div>
+    </div>
+
+    <!----------------about--------------->
+
+    <div id="About">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi!I am Shanju Shree from Tamil Nadu,India.I am glad to share my blog with you.Here is my portfolio and people 
+                    willing to contact me I have shared my contact details below.Also don't forget to leave a comment. 
+
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul>
+                        <li><span>Schooling</span><br>Completed my schooling in The PSBB Millinnium School,Coimbatore. </li>
+                        <li><span>College</span><br>I am currently pursuing Msc.Cybersecurity course in PSG College of Technology,Coimbatore. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Languages</span><br> Python, C++, HTML, CSS, SQL. </li>
+                        <li><span>Platform</span><br>I have worked on windows and linux platforms.</li>
+                        <li><span>Tools</span><br>CISCO Packet Tracer, Burp Suite, Wireshark and various other tools present 
+                            in kali linux used in security field.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Interests">
+                    <ul>
+                        <li><span>Areas of Interest</span><br>My other areas of interests are Network Security,Cloud Security,Security Analyst and Security Auditing. </li>
+                        <li><span>Current Project</span><br>I am currently working on a project based on Virtual Private Cloud using AWS. </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+    <!--------Hobbies----------->
+    <div id="Hobbies">
+        <div class="container">
+            <h1 class="sub-title">Hobbies</h1>
+            <div class="hobbies-list">
+                <div>
+                    <i class="fa-solid fa-heart" style="color: #f7f7f7;"></i>
+                    <h2>Classical Dance</h2>
+                    <p>
+                        I am pursuing my bharathanatiyam classes in Bakthi Natiya Nikethan (BNN) school of dance,Coimbatore, under Mrs.Karuna Sagari(My guru)...
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil" style="color: #fafafa;"></i>
+                    <h2>Drawing</h2>
+                    <p>
+                        I have a great interest in drawing and has produced several pieces in Global Arts...
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book" style="color: #f7f7f7;"></i>
+                    <h2>Books</h2>
+                    <p>
+                        I have a wide range of interests when it somes to books.I love to read books series especially...
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/man-in-the-middle.jpg">
+                    <div class="layer">
+                        <h3>ARP Spoofing</h3>
+                        <p>A utility created using python is a Man in the Middle (MitM) attack that  allows attackers to 
+                            intercept communication between network devices. It allows us to know.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/binary-code-background-PYA41Y.jpg">
+                    <div class="layer">
+                        <h3>Buffer Overflow</h3>
+                        <p>A code written in python using pwntools and GDB to control the  return address and arguments by overwriting the memory space and reading contents  stored in buffer of a C programming file. 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/aws.png">
+                    <div class="layer">
+                        <h3>VPC using AWS</h3>
+                        <p> Created a virtual private cloud using Amazon Web Services and launched a virtual machine instance in that cloud. 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!---------contact--------------->
+    <div id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me
+                    </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shanjushreea@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>phone no: 9629124304</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Shanju. Made with <i class="fa-solid fa-heart" style="color: #ee1111;"></i> by myself</p>
+        </div>
+    </div>
+    </div>
+ 
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu =  document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyf92B_BtoxWHJzWBvN4sMyB6QRQg1sjOWaXMW3Oc7ZXzSyf8ythxN6gWGsVBCYMCeJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
